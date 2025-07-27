@@ -1,0 +1,28 @@
+# Node modules
+**/node_modules
+**/dist
+**/.turbo
+**/.next
+**/.cache
+
+# Build artifacts
+*.log
+*.tsbuildinfo
+
+# Vite / Solid
+**/.vite
+
+# OS / IDE stuff
+.DS_Store
+*.swp
+*.swo
+*.idea
+.vscode
+
+# Env
+.env
+.env.*
+
+apps/frontend
+
+file_uploads/*

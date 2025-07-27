@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+   app:
+      container_name: pollimate-backend
+      build: ./
+      pull_policy: always
+      restart: unless-stopped
+      env_file: ./.env
+      ports:
+         - 3500:3500
+      stdin_open: true
+      tty: true

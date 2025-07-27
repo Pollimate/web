@@ -1,0 +1,64 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+
+# Secrets
+
+.env
+
+# Instrumented libs
+lib-cov
+
+# Coverage
+coverage
+.nyc_output
+
+# Build artifacts
+build
+dist
+.output
+.vinxi
+.turbo
+.next
+.out
+
+# Node/npm/yarn stuff
+node_modules
+.pnp
+.pnp.js
+.npm
+tsconfig.tsbuildinfo
+
+# Editors / IDEs
+.idea
+.vscode
+*.swp
+*code-workspace
+
+# System files
+.DS_Store
+
+# Generated or compiled code
+examples/typescript-server.js
+test/types/index.js
+
+# App-specific exclusions
+file_uploads/*
+tunnel.json
+app.*config
+
+
+
+# Vercel
+.vercel
+
+# Turbo repo cache
+.turbo

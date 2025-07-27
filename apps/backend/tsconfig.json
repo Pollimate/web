@@ -1,0 +1,18 @@
+{
+   "extends": ["fastify-tsconfig"],
+   "compilerOptions": {
+      "target": "ES6",
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "rootDirs": ["src", "../../packages/schemas/src"],
+      "outDir": "dist",
+
+      "paths": {
+         "@pollimate/schemas/*": ["../../packages/schemas/src/*"]
+      }
+   },
+   "include": ["src/**/*.ts"],
+   "watchOptions": {
+      "excludeDirectories": ["file_uploads/*"]
+   }
+}

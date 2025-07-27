@@ -1,0 +1,41 @@
+{
+   "name": "@pollimate/schemas",
+   "version": "1.0.0",
+   "author": "Benjamin Lindberg <lindbergbenjamin2@gmail.com>",
+   "main": "dist/index.js",
+   "types": "dist/index.d.ts",
+   "type": "module",
+   "scripts": {
+      "build": "tsup",
+      "dev": "tsup --watch"
+   },
+   "exports": {
+      ".": {
+         "types": "./dist/index.d.ts",
+         "import": "./dist/index.mjs",
+         "require": "./dist/index.cjs"
+      },
+      "./index": {
+         "types": "./dist/index.d.ts",
+         "import": "./dist/index.mjs",
+         "require": "./dist/index.cjs"
+      },
+      "./db": {
+         "types": "./dist/db/index.d.ts",
+         "import": "./dist/db/index.mjs",
+         "require": "./dist/db/index.cjs"
+      },
+      "./routes": {
+         "types": "./dist/routes/index.d.ts",
+         "import": "./dist/routes/index.mjs",
+         "require": "./dist/routes/index.cjs"
+      }
+   },
+   "dependencies": {
+      "libphonenumber-js": "^1.12.10",
+      "zod": "^4.0.5"
+   },
+   "devDependencies": {
+      "tsup": "^8.5.0"
+   }
+}
